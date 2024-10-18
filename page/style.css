@@ -1,0 +1,448 @@
+/* Balise Principaux -- Principal balise*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, serif;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.container {
+    display: flex;
+    margin: 12rem 10rem;
+}
+:root {
+    --main_color: #11672b
+}
+.btn{
+    background-color: var(--main_color);
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+.btn-2{
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+.doubleBtn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.doubleBtn a {
+    display: flex;
+    align-items: center;
+}
+.playIcone{
+    background-color: #f5fbed;
+    color: var(--main_color);
+    padding: 1rem;
+    border-radius: 50%;
+}
+.playIcone:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* barre de navigation -- navBar*/
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+.picOfHeader {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 0;
+    right: -150px;
+    opacity: 0;
+}
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+header nav a {
+    padding: 5px;
+}
+header nav a:hover {
+    color: white;
+    transition: 0.3s;
+    background-color: black;
+}
+/* première section -- first section*/
+.first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    gap: 3rem;
+}
+.first-container p:nth-child(1){
+    color: var(--main_color);
+    font:900;
+}
+h1{
+    font-size: 4rem;
+}
+/* Deuxième section -- second section*/
+.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.second-container p{
+    color: grey;
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+}
+/* Card section */
+.card-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.3s;
+}
+.card:hover .overlay {
+    opacity: 0.5;
+}
+.overlay i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.overlay p {
+    font-size: 16px;
+    text-align: center;
+}
+/* Troisème section -- third section*/
+.third-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+.third-container p {
+    color: grey;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.specialCard-template {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.specialCard {
+    width: 350px;
+    height: 700px; 
+    gap: 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.specialCard a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    margin: 0 auto; 
+}
+.specialCard:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
+}
+.specialCard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.specialCard h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+.specialCard p {
+    color: grey;
+    font-size: 0.95rem;
+}
+/* Quatrièeme section -- fourth section*/
+.bg{
+    background-color: #f9fff8;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+.fourth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 200px;
+    gap: 4rem;
+}
+.fourth-container .quote {
+    color: var(--main_color);
+    font-size: 60px;
+}
+.fourth-container img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.fourth-container div i:nth-child(1){
+    color: var(--main_color);
+}
+.fourth-container div i:nth-child(2){
+    color: var(--main_color);
+    opacity: 50%;
+}
+.fourth-container span{
+    font-size: larger;
+    font:bold;
+}
+/* cinquième section -- fiveth section*/
+.fiveth-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.avisCard {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.boxCard {
+    width: 30%;
+    position: relative; /* Ajouté pour le positionnement des éléments enfants */
+    overflow: hidden;
+}
+.img-container {
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+}
+.img-container img {
+    height: 93%;
+    width: 100%;
+    object-fit: cover; 
+}
+.text-overlay {
+        position: absolute; 
+        left: 0;
+        right: 0;
+        bottom: -15px; 
+        padding: 10px; 
+        margin: 10px 20px;
+        text-align: center;
+        background-color: white;  
+        gap: 10px;
+}
+.social-icons {
+    display: none; 
+    justify-content: center; 
+    gap: 10px; 
+    color: var(--main_color);
+}
+.social-icon:hover{
+    display: flex;
+}
+.boxCard:hover .social-icons {
+    display: flex; 
+}
+h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/* sixième section - sixth section */
+.bg-2{
+    background-color: #fff9f8;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+.sixth-container {
+    display: flex; 
+    width: 100vw;
+}
+.image-container {
+    flex: 1; 
+    max-width: 50%; 
+}
+.image-container img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+form {
+    flex: 1; 
+    max-width: 50%; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin: 15px;
+    padding: 50px;
+    text-align: center;
+    background-color:#fff9f8 ;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+}
+.input-group, .date-time {
+    flex: 1; 
+}
+input, select, textarea {
+    width: 100%; 
+    border: none; 
+    border-bottom: 1px solid grey; 
+    font-size: 16px; 
+    background-color: #fff9f8;
+}
+input::placeholder, textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); 
+}
+input:focus, select:focus, textarea:focus {
+    outline: none; 
+    border-bottom: 2px solid #000000; 
+}
+textarea {
+    height: 100px;
+    resize: vertical; 
+}
+/* section pied de page -- Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 100px;
+}
+footer nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+@media (min-width: 1300px) {
+    .picOfHeader{
+        opacity: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        margin: 6rem 2rem;
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 5rem;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+    .card {
+        width: 90%;
+    }
+    .boxCard {
+        width: 90%;
+    }
+    .fiveth-container {
+        flex-direction: column;
+    }
+    .sixth-container {
+        flex-direction: column;
+    }
+    .image-container, form {
+        max-width: 100%;
+    }
+    form {
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        gap: 3rem;
+    }
+    .btn, .btn-2 {
+        padding: 0.8rem;
+    }
+    .doubleBtn {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
